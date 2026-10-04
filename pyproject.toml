@@ -1,6 +1,12 @@
 [project]
 name = "domain-contract-0910031-004"
 version = "0.1.0"
-description = "讲解内容版本发布的领域约定与校验工具"
+description = "讲解内容版本发布的领域约定、校验工具与后端服务"
 requires-python = ">=3.11"
 dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+guide-versioning = "guide_versioning.__main__:main"
